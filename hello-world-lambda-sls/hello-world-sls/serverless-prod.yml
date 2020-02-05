@@ -1,0 +1,22 @@
+service: meguiluz-hello-world-sls-app
+# app and org for use with dashboard.serverless.com
+app: hello-world-sls-app
+org: eguiluzmanuel
+
+provider:
+  name: aws
+  stage: prod
+  region: us-east-1
+  runtime: nodejs12.x
+  versionFunctions: false
+  stackName: ${self:service}-stack
+  deploymentBucket:
+    name: ${self:service}-bucket
+
+functions:
+  index:
+    handler: handler.index
+    name: hello-world-index
+    timeout: 10 # optional, in seconds, default is 6
+    environment:
+      TEXT_HELLO: Hello

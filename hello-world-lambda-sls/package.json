@@ -1,0 +1,14 @@
+{
+  "name": "hello-world-lambda-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug:sls": "npm run --prefix ./hello-world-sls debug",
+    "debug:sls-client": "npm run --prefix ./hello-world-sls-client debug",
+    "debug": "npm run debug:sls & npm run debug:sls-client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
