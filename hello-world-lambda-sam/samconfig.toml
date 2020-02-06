@@ -1,0 +1,13 @@
+version = 0.1
+
+[default]
+
+[default.deploy]
+
+[default.deploy.parameters]
+region = "us-east-1"
+stack_name = "meguiluz-hello-world-sam-app-stack"
+s3_prefix = ""
+s3_bucket = "meguiluz-hello-world-sam-app-bucket"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"

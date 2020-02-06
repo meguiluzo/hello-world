@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  hello-world-lambda-sam
+
+  Sample SAM Template for hello-world-lambda-sam
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    MemorySize: 128
+    # Role: meguiluz-hello-world-sls-app-prod-us-east-1-lambdaRole
+
+Resources:
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      Runtime: nodejs12.x
+      Timeout: 180
+      FunctionName: hello-world-sam-index
+      CodeUri: hello-world/
+      Handler: handler.index
+      Environment:
+        Variables:
+          TEXT_HELLO: Hello
+      Tags:
+        STAGE: prod
