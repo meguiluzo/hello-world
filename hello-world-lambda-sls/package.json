@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug:sls": "npm run --prefix ./hello-world-sls debug",
-    "debug:sls-client": "npm run --prefix ./hello-world-sls-client debug",
-    "debug": "npm run debug:sls & npm run debug:sls-client"
+    "sls-server:start": "npm run --prefix ./hello-world-sls start",
+    "sls-server:debug": "npm run --prefix ./hello-world-sls start:debug",
+    "sls-client:start": "npm run --prefix ./hello-world-sls-client start",
+    "sls-client:debug": "npm run --prefix ./hello-world-sls-client start:debug"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
