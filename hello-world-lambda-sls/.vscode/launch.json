@@ -6,19 +6,15 @@
   "configurations": [
     {
       "type": "node",
-      "request": "launch",
-      "name": "Launch SLS Debug",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "debug:sls"],
+      "request": "attach",
+      "name": "Attach SLS Server Debug",
       "port": 9229,
       "skipFiles": ["<node_internals>/**"]
     },
     {
       "type": "node",
-      "request": "launch",
-      "name": "Launch SLS Debug Client",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "debug:sls-client"],
+      "request": "attach",
+      "name": "Attach SLS Client Debug",
       "port": 9230,
       "skipFiles": ["<node_internals>/**"]
     }
