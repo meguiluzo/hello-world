@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cross-env": "^7.0.0",
-    "serverless": "1.62.0",
-    "serverless-offline": "6.0.0-alpha.64"
+    "cross-env": "7.0.2",
+    "serverless": "1.75.1",
+    "serverless-offline": "6.4.0"
   }
 }
