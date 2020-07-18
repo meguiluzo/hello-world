@@ -1,8 +1,8 @@
 # Hello World Projects
 
-Este repositorio almacena multiples mini proyectos para demostrar el ejercicio de **Hello World** con diferentes lenguajes y/o configuraciones.
+This repository stores multiple mini projects to demonstrate the exercise of Hello World with different languages ​​and / or settings.
 
-En cada uno de los proyectos existe un archivo README.md con indicaciones adicionales para su ejecución.
+In each of the projects there is a README.md file with additional instructions for its execution.
 
 ## Cloud Computing
 
