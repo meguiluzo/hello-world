@@ -1,11 +1,11 @@
-const express = require("express"); // Import express library
+const express = require('express'); // Import express library
 const app = express(); // Initialize app as express application
 const PORT = 3000; // define port to running express app
 
 // Tell to express to listen for a GET request using ".get()" method
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({
-    message: "Hello World !"
+    message: 'Hello World !',
   });
 });
 
