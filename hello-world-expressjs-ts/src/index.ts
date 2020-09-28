@@ -1,11 +1,6 @@
-import express from 'express';
-import { PORT } from './config/constants';
-import { helloRouter } from './routes';
+import { app } from './server';
 
-const app = express();
-app.use(express.json());
-app.use('/', helloRouter);
+const port = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
-});
+// Start server
+app.listen(port, () => console.log(`Server is listening on port ${port}!`));
